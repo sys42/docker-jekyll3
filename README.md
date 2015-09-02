@@ -13,7 +13,7 @@ Well, this is a running target, but for now:
   * Python 2.7.6
   * Ruby 2.2
   * NodeJS 0.12.7
-  * Jekyll 3.0.0 beta 8
+  * Jekyll 3.0.0 beta 8 with various plugins
 
 ### Quickstart
 
@@ -37,7 +37,7 @@ jekyll serve -H 0.0.0.0
 
 The setting -H 0.0.0.0 is necessary, otherwise you won't see anything from outside the container. If you use jekyll in interactive mode you can call just `js` which is an alias for `jekyll serve -H 0.0.0.0`. 
 
-Now navigate from outside to `localhost:30000` or `127.0.0.1:30000` and you will see the generated website.
+Now navigate from outside to `localhost:4000` or `127.0.0.1:4000` and you will see the generated website.
 
 ### Next Steps
 
@@ -53,5 +53,4 @@ Now navigate from outside to `localhost:30000` or `127.0.0.1:30000` and you will
 
 [Jeykill Homepage](http://jekyllrb.com/)
 [Jekyll on Github](https://github.com/jekyll/jekyll)
-
 
