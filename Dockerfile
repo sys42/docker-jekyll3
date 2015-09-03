@@ -10,6 +10,7 @@ RUN gem install jekyll-paginate
 RUN gem install jekyll-sitemap
 RUN gem install redcarpet
 RUN gem install html-proofer
+RUN gem install jekyll-tagging
 
 EXPOSE 4000
 WORKDIR /project
