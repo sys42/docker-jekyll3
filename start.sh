@@ -7,7 +7,7 @@ if [ $# -eq 0 ]; then
   # (*) starts jekyll server in current working directory
   docker run -ti --rm -v "$(pwd)":/project -p 4000:4000 -w /project \
          sys42/docker-jekyll3:latest \
-         /sbin/remapuser app $(id -u) $(id -g) \
+         remapuser app $(id -u) $(id -g) \
          /bin/bash -lic "js"
 else
   # If arguments are given to this script they are interpreted as
@@ -18,6 +18,6 @@ else
   #
   docker run -ti --rm -v "$(pwd)":/project -p 4000:4000 -w /project \
          sys42/docker-jekyll3:latest \
-         /sbin/remapuser app $(id -u) $(id -g) \
+         remapuser app $(id -u) $(id -g) \
          "$@"
 fi
